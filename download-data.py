@@ -7,7 +7,7 @@ if(not path.isfile('galaxy-zoo-the-galaxy-challenge.zip')):
     os.system('kaggle competitions download -c galaxy-zoo-the-galaxy-challenge')
 
 if(not path.exists(path.join('galaxy-zoo-the-galaxy-challenge', 'data'))):
-   os.mkdir(path.join('galaxy-zoo-the-galaxy-challenge', 'data'))
+    os.mkdir(path.join('galaxy-zoo-the-galaxy-challenge', 'data'))
 
 with zipfile.ZipFile('galaxy-zoo-the-galaxy-challenge.zip', 'r') as zip_ref:
     for f in zip_ref.namelist():
